@@ -1,4 +1,4 @@
-defmodule Ecommerce.Commands.AddUnitToCart do
+defmodule Ecommerce.Protocol.Commands.AddUnitToCart do
   defstruct [
     :uuid,
     :product_uuid,

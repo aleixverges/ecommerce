@@ -1,4 +1,4 @@
-defmodule Ecommerce.Commands.RemoveUnitFromCart do
+defmodule Ecommerce.Protocol.Commands.RemoveUnitFromCart do
   defstruct [
     :uuid,
     :product_uuid,

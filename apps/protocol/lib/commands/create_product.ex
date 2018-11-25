@@ -1,4 +1,4 @@
-defmodule Ecommerce.Events.ProductCreated do
+defmodule Ecommerce.Protocol.Commands.CreateProduct do
   defstruct [
     :uuid,
     :name,

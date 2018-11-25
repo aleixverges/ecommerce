@@ -8,10 +8,10 @@ defmodule Ecommerce.Catalogue.Product do
   ]
 
   alias Ecommerce.Catalogue.Product
-  alias Ecommerce.Commands.CreateProduct
-  alias Ecommerce.Commands.DecreaseStock
-  alias Ecommerce.Events.ProductCreated
-  alias Ecommerce.Events.StockDecreased
+  alias Ecommerce.Protocol.Commands.CreateProduct
+  alias Ecommerce.Protocol.Commands.DecreaseStock
+  alias Ecommerce.Protocol.Events.ProductCreated
+  alias Ecommerce.Protocol.Events.StockDecreased
 
   def create(%Product{}, %CreateProduct{} = create_product) do
     %ProductCreated{

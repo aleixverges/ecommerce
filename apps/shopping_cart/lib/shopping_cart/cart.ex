@@ -9,9 +9,9 @@ defmodule Ecommerce.ShoppingCart.Cart do
   alias Ecommerce.Command.AddUnitToCart
   alias Ecommerce.Command.RemoveUnitFromCart
   alias Ecommerce.Command.CheckOut
-  alias Ecommerce.Events.UnitAddedToCart
-  alias Ecommerce.Events.UnitRemovedFromCart
-  alias Ecommerce.Events.CheckedOut
+  alias Ecommerce.Protocol.Events.UnitAddedToCart
+  alias Ecommerce.Protocol.Events.UnitRemovedFromCart
+  alias Ecommerce.Protocol.Events.CheckedOut
 
   def add_product(%Cart{}, %AddUnitToCart{} = add_product) do
     %UnitAddedToCart{

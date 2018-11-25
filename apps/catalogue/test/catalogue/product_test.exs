@@ -2,10 +2,10 @@ defmodule Ecommerce.Catalogue.ProductTest do
   use ExUnit.Case
   doctest Ecommerce.Catalogue.Product
 
-  alias Ecommerce.Commands.CreateProduct
-  alias Ecommerce.Commands.DecreaseStock
-  alias Ecommerce.Events.ProductCreated
-  alias Ecommerce.Events.StockDecreased
+  alias Ecommerce.Protocol.Commands.CreateProduct
+  alias Ecommerce.Protocol.Commands.DecreaseStock
+  alias Ecommerce.Protocol.Events.ProductCreated
+  alias Ecommerce.Protocol.Events.StockDecreased
   alias Ecommerce.Catalogue.Product
 
     test "should be created" do

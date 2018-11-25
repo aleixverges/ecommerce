@@ -1,6 +1,6 @@
-defmodule Ecommerce.Commands do
+defmodule Ecommerce.Protocol do
   @moduledoc """
-  Documentation for Ecommerce.Commands.
+  Documentation for Ecommerce.Protocol.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Ecommerce.Commands do
 
   ## Examples
 
-      iex> Ecommerce.Commands.hello()
+      iex> Ecommerce.Protocol.hello()
       :world
 
   """
